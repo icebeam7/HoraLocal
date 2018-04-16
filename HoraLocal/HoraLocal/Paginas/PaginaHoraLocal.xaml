@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HoraLocal.Paginas.PaginaHoraLocal">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" Padding="10">
+            <Label Text="Hora Local" TextColor="Blue" FontSize="Large"/>
+
+            <ActivityIndicator x:Name="indicator" Color="Green" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+            <Button x:Name="btnObtenerUbicacion" Text="Obtener ubicación actual" TextColor="White"
+                        BackgroundColor="#0072BD" FontSize="Medium" Clicked="btnObtenerUbicacion_Clicked"/>
+
+            <Label Text="Latitud" TextColor="Black" FontSize="Medium"/>
+            <Entry x:Name="txtLatitud" TextColor="White" Placeholder="Latitud" Keyboard="Numeric"
+                   PlaceholderColor="LightGray" BackgroundColor="Black" FontSize="Medium"/>
+
+            <Label Text="Longitud" TextColor="Black" FontSize="Medium"/>
+            <Entry x:Name="txtLongitud" TextColor="White" Placeholder="Longitud" Keyboard="Numeric" 
+                   PlaceholderColor="LightGray" BackgroundColor="Black" FontSize="Medium"/>
+
+            <Button x:Name="btnObtenerHoraUbicacion" Text="Obtener hora de la ubicación" TextColor="White"
+                        BackgroundColor="#0072BD" FontSize="Medium" Clicked="btnObtenerHoraUbicacion_Clicked"/>
+
+            <Label Text="Fecha y hora actual" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
+            <Label x:Name="lblFechaActual" TextColor="Black" FontSize="Medium"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
